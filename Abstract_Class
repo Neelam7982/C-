@@ -28,3 +28,39 @@ namespace ABSTRACT_CLASS
 }
 
 -----------------------------------class 2-----------------------------------
+using System;
+
+namespace MyApplication
+{
+    // Abstract class
+    abstract class Test
+    {
+        // Abstract method (does not have a body)
+        public abstract void hut();
+        // Regular method
+        public void sleep()
+        {
+            Console.WriteLine("Hello sir");
+        }
+    }
+
+    // Derived class (inherit from Animal)
+    class Test1 : Test
+    {
+        public override void hut()
+        {
+            // The body of animalSound() is provided here
+            Console.WriteLine("My abstract class");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Test1 to = new Test1();  // Create a Pig object
+            to.sleep();
+            to.hut();            
+        }
+    }
+}
