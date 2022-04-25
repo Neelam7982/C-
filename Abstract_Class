@@ -1,0 +1,28 @@
+using System;
+
+namespace ABSTRACT_CLASS
+{
+    abstract class test
+    {
+        public abstract void fun();
+        public void sleep()
+        {
+            Console.WriteLine("this is function");
+        }
+    }
+     class test1 :test
+        
+    { 
+        public override void fun()
+        {
+            Console.WriteLine("this is override function");
+        }
+        static void Main(string[] args)
+        {
+            test1 obj = new test1();
+            obj.sleep();
+            obj.fun();
+
+        }
+    }
+}
