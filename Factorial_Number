@@ -1,0 +1,20 @@
+using System;
+
+namespace Factorial_Number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, fact = 1;
+            Console.WriteLine("Enter the Number");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < n; i++)
+            {
+                fact = fact * i;
+            }
+            Console.Write("Factorial Number " + n + " is " + fact);
+            Console.ReadKey(true);
+        }
+    }
+}
